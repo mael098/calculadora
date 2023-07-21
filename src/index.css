@@ -1,11 +1,17 @@
 :root {
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
-  --fondo: #000;
+  --fondo:#171711;
   --fondo-calculadora: #a78d9e;
   --textol: #000;
   --primario: #74819d;
+  --secundario: #fef0a5;
+  --terciario: #f38181;
+  --box-shadow: 0 0 20px 10px #000000;
+  background-color: var(--fondo);
+  color: var(--textol);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,13 +20,4 @@
   height: 100vh;
   display: grid;
   place-items: center;
-}
-main {
-  background: -moz-linear-gradient(39087deg, #646cff 0%, #61dafb 100%, #771fba 100%);
-  aspect-ratio: 6/10;
-  border-radius: 40px;
-  height: 90%;
-  min-height: 600px;
-  box-shadow: 0 0 20px 10px #000000;
-  text-align: center;
 }
