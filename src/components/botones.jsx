@@ -1,4 +1,4 @@
-import './calculadora.css'
+import'./Botones.css'
 
 const botones = (params) => {
     const {texto,clase} = params 

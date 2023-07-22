@@ -1,0 +1,24 @@
+button {
+    background-color: var(--primario);
+    border: none;
+    border-radius: 1rem;
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+}
+button:active {
+    background-color: var(--terciario);
+    transform: scale(1.02);
+}
+
+button.gris {
+    background-color: var(--secundario);
+    color: var(--textol);
+}
+
+button.operacio {
+    background-color: var(--primario);
+}
+button.numero{
+    background-color: var(--secundario);
+    color: var(--textol);
+}

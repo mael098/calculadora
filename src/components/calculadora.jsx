@@ -1,31 +1,32 @@
+import Botones from "./botones.jsx"
+
 import "./calculadora.css"
 //esla inportacion de estilos
-import Botones from "./botones.jsx"
 
 const calcualadoraBonita = () => {
   return (
     <main>
       <input className="Resultado" type="text" value="50" />
       <input className="Displey" type="text" value="25+25" />
-      <Botones texto="c" class="gris" />
-      <Botones texto="+/-" class="gris" />
-      <Botones texto="%" class="gris" />
-      <Botones texto="/" class="operacion" />
-      <Botones texto="7" class="gris" />
-      <Botones texto="8" class="gris" />
-      <Botones texto="9" class="gris" />
-      <Botones texto="*" class="operacion" />
-      <Botones texto="4" class="gris" />
-      <Botones texto="5" class="gris" />
-      <Botones texto="6" class="gris" />
-      <Botones texto="-" class="operacion" />
-      <Botones texto="1" class="gris" />
-      <Botones texto="2" class="gris" />
-      <Botones texto="3" class="gris" />
-      <Botones texto="+" class="operacion" />
-      <Botones texto="0" class="gris" />
-      <Botones texto="." class="gris" />
-      <Botones texto="=" class="operacion" />
+      <Botones texto="c" clase='operacion' />
+      <Botones texto="+/-" clase='operacion' />
+      <Botones texto="%" clase='operacion' />
+      <Botones texto="/" clase='operacion' />
+      <Botones texto="7" clase='numero' />
+      <Botones texto="8" clase='numero' />
+      <Botones texto="9" clase='numero' />
+      <Botones texto="*" clase='operacion' />
+      <Botones texto="4" clase='numero' />
+      <Botones texto="5" clase='numero' />
+      <Botones texto="6" clase='numero' />
+      <Botones texto="-" clase='operacion' />
+      <Botones texto="1" clase='numero' />
+      <Botones texto="2" clase='numero' />
+      <Botones texto="3" clase='numero' />
+      <Botones texto="+" clase='operacion' />
+      <Botones texto="0" clase='numero' />
+      <Botones texto="." clase='numero' />
+      <Botones texto="=" clase='operacion' />
       
     </main>
   )
