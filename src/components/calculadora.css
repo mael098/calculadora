@@ -9,8 +9,9 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+  align-content: center;
 }
-input {
+span {
   grid-column: span 4;
   text-align: right;
   font-size: larger;
@@ -20,15 +21,17 @@ input {
   padding: 0 .5rem;
 }
 
-input.Resultado {
+span.Resultado {
   color: var(--textol);
   font-size: 3rem;
   font-weight: bold;
+  height: 3rem;
 }
-input.Displey {
+span.Displey {
   color: var(--textol);
   font-size: 4rem;
   font-weight: bold;
+  height: 4rem;
 }
 
 

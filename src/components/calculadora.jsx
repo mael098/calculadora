@@ -1,13 +1,25 @@
+import { useState } from "react"
 import Botones from "./botones.jsx"
 
 import "./calculadora.css"
 //esla inportacion de estilos
 
 const calcualadoraBonita = () => {
+   const [data, setData] = useState({operacion: "", resultado: ""})
+
+   const escritura = (event) =>{
+    setData({...data,operacion: `${data.operacion}` + event.target.innerText})
+
+   }
+   
+
+
+   
+
   return (
     <main>
-      <input className="Resultado" type="text" value="50" />
-      <input className="Displey" type="text" value="25+25" />
+      <span className="Resultado">{data.resultado}</span>
+      <span className="Displey">{data.operacion}</span>
       <Botones texto="c" clase='operacion' />
       <Botones texto="+/-" clase='operacion' />
       <Botones texto="%" clase='operacion' />
@@ -24,7 +36,7 @@ const calcualadoraBonita = () => {
       <Botones texto="2" clase='numero' />
       <Botones texto="3" clase='numero' />
       <Botones texto="+" clase='operacion' />
-      <Botones texto="0" clase='numero' />
+      <Botones texto="0" clase='numero' handleClick={escritura}/>
       <Botones texto="." clase='numero' />
       <Botones texto="=" clase='operacion' />
       
