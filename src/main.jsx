@@ -7,5 +7,5 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <CalcualadoraBonita/>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
